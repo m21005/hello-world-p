@@ -13,9 +13,9 @@ jobs:
          - run: mkdir -p my_workspace
          - run: echo "Trying out workspace" > my_workspace/echo-output\
          - persist_to_workflow:
-          root: my_workspace
-          paths:
-            - echo-output
+              root: my_workspace
+              paths:
+                - echo-output
   two:
     docker:
       - image: cimg/ruby:3.0.2
