@@ -23,7 +23,7 @@ jobs:
          - run: echo "A more familiar h1"
          - run: sleep 15         
          
-workflow:
+workflows:
   version: 2
   one_and_two:
     jobs:
